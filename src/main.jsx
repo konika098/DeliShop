@@ -9,6 +9,7 @@ import Home from './Layout/Home/Home';
 import Root from './Layout/Root/Root';
 import AddToCart from './Layout/AddCart/AddToCart';
 import MyCart from './Layout/MyCart/MyCart';
+import NewProduct from './Layout/AddCart/NewProduct';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
      {
       path:"myCart",
       element:<MyCart/>
+     },
+     {
+      path:"/newProduct",
+      element:<NewProduct></NewProduct>,
+      loader:()=>fetch('http://localhost:5000/food')
      }
     ]
   },

@@ -11,17 +11,18 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <NavLink to="/">Home</NavLink>
-                        <NavLink to="/addCart">Add To Cart</NavLink>
+                        <NavLink to="/addCart">Add Product</NavLink>
                         <NavLink to="/myCart">My Cart</NavLink>
                         </ul>
                     </div>
-                    <a className=" normal-case text-2xl font-semibold ">DeliShop</a>
+                    <img className="w-26 h-24" src="https://i.ibb.co/Q9q8VGm/Green-White-Minimalist-Aesthetic-Plant-and-Flower-Shop-Logo-1-removebg-preview.png" alt="" />
+                    {/* <a className=" normal-case text-2xl font-semibold ">DeliShop</a> */}
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal flex gap-4 text-2xl font-semibold px-1">
                        
                         <NavLink to="/">Home</NavLink>
-                        <NavLink to="/addCart">Add To Cart</NavLink>
+                        <NavLink to="/addCart">Add Product</NavLink>
                         <NavLink to="/myCart">My Cart</NavLink>
                         
                         
