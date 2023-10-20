@@ -6,7 +6,7 @@ const ViewDetails = () => {
     return (
         <>
         {
-            // viewData.map(data=><ViewData key={data._id} Data={data}></ViewData>)
+            
             view.map(data=><ViewData key={data._id} Data={data} ></ViewData>)
         }
         </>

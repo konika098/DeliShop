@@ -23,6 +23,8 @@ const Home = () => {
       useEffect(() => {
         fetchUserData()
       })
+     
+      
     return (
         <>
         

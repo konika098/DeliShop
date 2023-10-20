@@ -3,10 +3,14 @@
 // import { useLoaderData } from "react-router-dom";
 // import BrandProduct from "./BrandProduct";
 
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Brand = ({showData}) => {
   const { image, Brand_Name } = showData
+
+  
+
  
 
  

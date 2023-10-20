@@ -3,13 +3,17 @@ import BrandDetails from "./BrandDetails";
 
 const BrandProduct = () => {
     const [data, setData] = useState([])
-    const fetchUserData = () => {
-        fetch(`http://localhost:5000/BrandProduct/:name`)
+
+       
+      
+  const fetchUserData = () => {
+        fetch('http://localhost:5000/food')
           .then(response => {
             return response.json()
           })
           .then(data => {
             setData(data)
+            console.log(data)
           })
       }
     useEffect(() => {
