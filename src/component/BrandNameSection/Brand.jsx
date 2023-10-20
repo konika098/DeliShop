@@ -1,33 +1,26 @@
-import { useEffect, useState } from "react";
-import BrandDetails from "./BrandDetails";
+// import { useEffect, useState } from "react";
+// import BrandDetails from "./BrandDetails";
+// import { useLoaderData } from "react-router-dom";
+// import BrandProduct from "./BrandProduct";
 
-const Brand = () => {
-    const [data,setData] =useState([])
+import { Link } from "react-router-dom";
 
-    const fetchUserData = () => {
-        fetch("brand.json")
-          .then(response => {
-            return response.json()
-          })
-          .then(data => {
-            setData(data)
-          })
-      }
-      useEffect(()=>{
-        fetchUserData()
-      })
-    return (
-       <>
-           <h1 className=" text-lg lg:text-5xl font-bold italic text-center text-green-600 mt-20  ">Top Brand Name</h1>
-        <hr className="bg-green-800 w-1/5  mt-4 mx-auto h-1"/>
+const Brand = ({showData}) => {
+  const { image, Brand_Name } = showData
+ 
+
+ 
+ 
+  return (
+    <>
+      <Link to='/BrandProduct' className="mx-auto mb-20">
+                    <img className="h-[200px] w-80" src={image} alt="" />
+                    {/* <p className="text-center font-semibold text-3xl">{ Brand_Name}</p> */}
+
+                </Link>
       
-     <div className="grid grid-cols-1  mx-auto md:grid-cols-2 xl:grid-cols-3 mt-10 mb-5 -m-4">
-     {
-        data.map(showData => <BrandDetails key={showData.id} showData={showData}></BrandDetails>)
-      }
-     </div>
-       </>
-    );
+    </>
+  );
 };
 
 export default Brand;

@@ -11,7 +11,7 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <NavLink to="/">Home</NavLink>
-                        <NavLink to="/addCart">Add Product</NavLink>
+                        <NavLink to="/addProduct">Add Product</NavLink>
                         <NavLink to="/myCart">My Cart</NavLink>
                         </ul>
                     </div>
@@ -22,7 +22,7 @@ const Header = () => {
                     <ul className="menu menu-horizontal flex gap-4 text-2xl font-semibold px-1">
                        
                         <NavLink to="/">Home</NavLink>
-                        <NavLink to="/addCart">Add Product</NavLink>
+                        <NavLink to="/addProduct">Add Product</NavLink>
                         <NavLink to="/myCart">My Cart</NavLink>
                         
                         

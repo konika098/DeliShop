@@ -3,7 +3,7 @@
 const Review = () => {
     return (
        <>
-        <h1 className="text-5xl font-semibold text-center text-green-800 mt-20">What our food lover said:</h1>
+        <h1 className="text-5xl font-semibold text-center text-green-800 mt-40">What our food lover said:</h1>
        <div className="mt-10 flex flex-col items-center mx-auto">
        
        <div className="lg:w-1/3 lg:mb-0 mb-6 p-4 " >
