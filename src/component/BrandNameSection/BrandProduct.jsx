@@ -1,33 +1,28 @@
-import { useEffect, useState } from "react";
+
+import { useLoaderData } from "react-router-dom";
 import BrandDetails from "./BrandDetails";
 
+
 const BrandProduct = () => {
-    const [data, setData] = useState([])
+  const brandData = useLoaderData()
 
-       
-      
-  const fetchUserData = () => {
-        fetch('http://localhost:5000/food')
-          .then(response => {
-            return response.json()
-          })
-          .then(data => {
-            setData(data)
-            console.log(data)
-          })
-      }
-    useEffect(() => {
-        fetchUserData()
-      })
 
-    return (
-       <>
-       {
-            
-            data.map(Data =><BrandDetails key={Data._id} Data={Data}></BrandDetails>)
-          }
-       </>
-    );
+
+
+
+
+
+  return (
+    <>
+    
+      <div className="grid grid-cols-2 w-2/4 mx-auto gap-5 mt-5 ">
+        {
+
+          brandData.map(Data => <BrandDetails key={Data._id} Data={Data}></BrandDetails>)
+        }
+      </div>
+    </>
+  );
 };
 
 export default BrandProduct;

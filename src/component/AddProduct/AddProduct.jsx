@@ -12,15 +12,15 @@ const AddProduct = () => {
         event.preventDefault()
         const form = event.target;
 
-        const name = form.name.value;
-        const description = form.description.value;
-        const price = form.price.value;
-        const category = form.category.value;
-        const quantity = form.quantity.value;
-        const photo = form.photo.value;
-        const code = form.code.value;
+        const Name = form.Name.value;
+        const BrandName = form.BrandName.value;
+        const Price = form.Price.value;
+        const Type = form.Type.value;
+        const shortDescription = form.shortDescription.value;
+        const Image = form.Image.value;
+        const Rating = form.Rating.value;
 
-        const newFood = { name, description, price, category, quantity, photo, code }
+        const newFood = { Name, BrandName, Price, Type, shortDescription, Image, Rating }
         console.log(newFood)
 
 
@@ -64,11 +64,11 @@ const AddProduct = () => {
                                         <div className="lg:flex items-center  gap-3 ">
                                             <div className="flex text-white flex-col gap-2  mb-5">
                                                 <label htmlFor="name">Name</label>
-                                                <input type="text" className="px-3 py-2 " name="name" placeholder="Product name" />
+                                                <input type="text" className="px-3 py-2 text-black " name="Name" placeholder="Product name" />
                                             </div>
                                             <div className="flex text-white flex-col gap-2 mb-5 lg:w-[205px]">
                                                 <label htmlFor="Brand">Brand</label>
-                                                <select id="Brand" name="brandName" className="px-3 py-2 text-green-800" >
+                                                <select id="Brand" name="BrandName" className="px-3 py-2 text-green-800" >
                                                     <option value="Coca-Cola"  >Coca-Cola</option>
                                                     <option value="McDonald's">McDonald's</option>
                                                     <option value="Starbucks">Starbucks</option>
@@ -81,17 +81,17 @@ const AddProduct = () => {
                                         <div className="lg:flex items-center text-white gap-3 ">
                                             <div className="flex flex-col gap-2  mb-5">
                                                 <label htmlFor="Price">Price</label>
-                                                <input type="text" className="px-3 py-2 " name="price" placeholder="Product Price" />
+                                                <input type="text" className="px-3 py-2 text-black" name="Price" placeholder="Product Price" />
                                             </div>
                                             <div className="flex flex-col gap-2 text-white  mb-5">
                                                 <label htmlFor="Type">Type</label>
-                                                <input type="text" className="px-3 py-2 " name="type" placeholder="Product Type" />
+                                                <input type="text" className="px-3 py-2 text-black" name="Type" placeholder="Product Type" />
                                             </div>
                                         </div>
                                         <div className="lg:flex items-center text-white  gap-3 ">
                                             <div className="flex flex-col gap-2 lg:w-[420px]  mb-5">
                                                 <label htmlFor="Rating">Rating</label>
-                                                <input type="text" className="px-3 py-2" name="Extrarating" placeholder="Rating" />
+                                                <input type="text" className="px-3 py-2 text-black" name="Rating" placeholder="Rating" />
 
                                             </div>
 
@@ -99,12 +99,12 @@ const AddProduct = () => {
                                         <div>
                                             <div className='flex flex-col text-white gap-2 lg:w-[420px] mb-5'>
                                                 <label htmlFor="Photo">PhotoUrl</label>
-                                                <input name="image" className="px-3 py-2" placeholder="Enter photo URL" />
+                                                <input name="Image" className="px-3 py-2 text-black" placeholder="Enter photo URL" />
 
                                             </div>
                                             <div className='flex flex-col text-white gap-2 lg:w-[420px] mb-5'>
-                                                <label htmlFor="description">Description</label>
-                                                <input name="description" className="px-3 py-2" placeholder="Describe about the product" />
+                                                <label htmlFor="shortDescription">Description</label>
+                                                <input name="shortDescription" className="px-3 py-2 text-black" placeholder="Describe about the product" />
 
                                             </div>
                                         </div>

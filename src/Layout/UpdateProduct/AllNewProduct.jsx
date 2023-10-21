@@ -1,16 +1,16 @@
 const AllNewProduct = ({ newDatas}) => {
-    const { name, description, price, category, quantity, photo } = newDatas
+    const { Name, shortDescription , Price, Type, Image } = newDatas
     return (
         <>
             <div className="card w-96 bg-base-100 shadow-xl">
-                <figure><img src={photo} alt="Shoes" /></figure>
+                <figure><img src={Image} alt="Shoes" /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">{name}</h2>
-                    <p>{description}</p>
-                    <p>{category}</p>
+                    <h2 className="card-title">{Name}</h2>
+                    <p>{shortDescription}</p>
+                    <p>{Type}</p>
                     <div>
-                    <p>price:{price}</p>
-                    <p>Qun:{quantity}</p>
+                    <p>Price:{Price}</p>
+                    
                     </div>
                     <div className="card-actions justify-end">
                         <button className="btn bg-white text-green-700 mt-5 hover:bg-white ">View Details</button>

@@ -17,7 +17,7 @@ const Brand = ({showData}) => {
  
   return (
     <>
-      <Link to='/BrandProduct' className="mx-auto mb-20">
+      <Link to={`/BrandProduct/${ Brand_Name }`} className="mx-auto mb-20">
                     <img className="h-[200px] w-80" src={image} alt="" />
                     {/* <p className="text-center font-semibold text-3xl">{ Brand_Name}</p> */}
 
