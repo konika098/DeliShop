@@ -20,7 +20,7 @@ const BrandDetails = ({Data}) => {
                     <div className="card-actions justify-end">
                      
                   {/* <Link to={`/update/${_id}`}> */}
-                  <button className="btn bg-white text-green-700 mt-5 hover:bg-white"  onClick={() => document.getElementById(`my_modal_3`).showModal()}> Update</button>
+                  <button className="btn bg-white text-green-700 mt-5 hover:bg-white"  onClick={() => document.getElementById('my_modal_5').showModal()}> Update</button>
                   {/* </Link> */}
                     <Link to={`/viewDetails/${_id}`} >
                     <button className="btn bg-white text-green-700 mt-5 hover:bg-white ">View Details</button>

@@ -32,31 +32,31 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          <img src="https://i.ibb.co/1nMHLP8/pexels-photo-2067432.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          <img src="https://i.ibb.co/cQMRj3D/pexels-photo-7441761.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src="https://i.ibb.co/7tVM3sZ/pexels-photo-15564188.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src="https://i.ibb.co/m4tyqd3/pexels-photo.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          <img src="https://i.ibb.co/Pc6BC57/pexels-photo-8739111.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          <img src="https://i.ibb.co/zbX6ZbF/pexels-photo-4110541.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          <img src="https://i.ibb.co/8X8B4rW/pexels-photo-14048850.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          <img src="https://i.ibb.co/47Wcx9V/pexels-photo-5862147.webp" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          <img src="https://i.ibb.co/cQqf6Qt/pexels-photo-4753648.jpg" />
         </SwiperSlide>
       </Swiper>
     </>

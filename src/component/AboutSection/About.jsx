@@ -1,7 +1,7 @@
 const About = () => {
     return (
        <>
-       <div className="grid grid-cols-2 w-3/5 mt-40 mx-auto">
+       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 w-3/5 mt-40 mx-auto">
         <div>
             <img className="w-full h-[400px]" src="https://i.ibb.co/DprbC5T/pexels-photo-1640772.jpg" alt="" />
         </div>

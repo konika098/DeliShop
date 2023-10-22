@@ -55,10 +55,10 @@ const AddProduct = () => {
                     products.map(productData => <Product key={productData._id} ProductData={productData}></Product>)
                 } */}
             </div>
-            <div className="w-full min-h-screen bg-[url('https://i.ibb.co/8Dnjv5P/pexels-photo-3338497.jpg')] bg-cover bg-center ">
+            <div className="w-full min-h-screen bg-[url('https://i.ibb.co/qNCg232/pexels-photo-912413.webp')] bg-cover bg-center ">
                 <div className="w-full min-h-screen h-full  flex flex-col  justify-center items-center  md:backdrop-brightness-50">
                     <div className="mt-4 flex flex-col bg-green-800 rounded-lg p-4 shadow-sm">
-                        <h2 className="text-white text-center font-bold text-xl">Add To Cart</h2>
+                        <h2 className="text-white text-center font-bold text-xl">Add Product</h2>
                        
                        <form onSubmit={handleAddFood} className='flex  flex-col justify-center mx-auto' >
                                         <div className="lg:flex items-center  gap-3 ">
