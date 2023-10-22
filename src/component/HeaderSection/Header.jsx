@@ -1,14 +1,23 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../ProviderFile/AuthProvider";
 
 const Header = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
+    const {user,logOut} =useContext(AuthContext)
     const handleToggle = (e) => {
         if (e.target.checked) {
             setTheme("dark");
         } else {
             setTheme("light");
         }
+    }
+
+    
+    const handleLogOut =()=>{
+        logOut()
+        .then(()=>console.log("successfully log out"))
+        .catch(error=>console.error(error))
     }
 
     useEffect(() => {
@@ -56,9 +65,30 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-4">
-                    <Link to="/login" className="btn bg-green-700 hover:bg-green-800 text-white">Login</Link>
-                    <Link to="/register" className="btn bg-green-700 hover:bg-green-800 text-white">Register</Link>
+                {
+                        user? "":<>
+                          <Link to="/register" className="btn bg-green-700 hover:bg-green-800 text-white">Register</Link>
+                       
+                         
+                        
+                        
+                        <Link to="/login" className="btn bg-green-700 hover:bg-green-800 text-white">Login</Link>
+                        </>
+                    } 
                    
+                   <div className="flex items-center gap-1">
+                  
+                    {
+                        user ? <img className="rounded-full w-9 md:w-16" src={user.photoURL} alt="" />:""
+                    }
+                     {
+                        user ? 
+                        <button onClick={handleLogOut} className="p-1 rounded bg-green-700 hover:bg-green-800 text-white text-sm md:text-base lg:text-xl lg:p-3 font-semibold hover:text-white">Sign Out</button>
+                        :" "
+                     }
+                    </div>
+                   
+
                   
                 </div>
             </div>

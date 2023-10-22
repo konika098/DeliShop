@@ -37,7 +37,7 @@ const Home = () => {
         <div className="grid grid-cols-1  mx-auto md:grid-cols-2 xl:grid-cols-3 mt-10 mb-5 -m-4">
           {
             
-            data.map(showData =><Brand key={showData.id} showData={showData}></Brand>)
+            data?.map(showData =><Brand key={showData.id} showData={showData}></Brand>)
           }
         </div>
         {/* <BrandDetails/> */}

@@ -16,7 +16,7 @@ const ViewDetails = () => {
    
     
 
-    fetch('http://localhost:5000/cart', {
+    fetch('https://delishop-rho.vercel.app/cart', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'

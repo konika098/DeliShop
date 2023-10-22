@@ -24,7 +24,7 @@ const UpdateModal = ({ Data }) => {
         console.log(updateData)
 
         fetch(
-            `http://localhost:5000/update/${_id}`,
+            `https://delishop-rho.vercel.app/update/${_id}`,
             {
                 method: "PUT",
                 headers: { "content-type": "application/json" },

@@ -36,35 +36,35 @@ const router = createBrowserRouter([
      {
       path:"/BrandProduct/:name",
       element:<BrandProduct/>,
-      loader:({params})=>fetch(`http://localhost:5000/BrandProduct/${params.name}`)
+      loader:({params})=>fetch(`https://delishop-rho.vercel.app/BrandProduct/${params.name}`)
       
      },
      {
      path:'/brand',
      element:<Brand/>,
-    //  loader:()=>fetch('http://localhost:5000/food')
+    //  loader:()=>fetch('https://delishop-rho.vercel.app/food')
      },
      {
       path:"addProduct",
       element:<PrivateRoute><AddProduct/></PrivateRoute>,
-      loader:()=>fetch('http://localhost:5000/food')
+      loader:()=>fetch('https://delishop-rho.vercel.app/food')
      },
      {
       path:'/update/:id',
       element:<UpdateModal/>,
-      loader:({params})=>fetch(`http://localhost:5000/food${params._id}`)
+      loader:({params})=>fetch(`https://delishop-rho.vercel.app/food${params._id}`)
 
      },
   
      {
       path:"/myCart",
       element:<PrivateRoute><MyCart/></PrivateRoute>,
-      loader:()=>fetch(`http://localhost:5000/cart`)
+      loader:()=>fetch(`https://delishop-rho.vercel.app/cart`)
      },
      {
       path:'/viewDetails/:id',
       element:<ViewDetails/>,
-      loader:({params})=>fetch(`http://localhost:5000/viewDetails/${params.id}`)
+      loader:({params})=>fetch(`https://delishop-rho.vercel.app/viewDetails/${params.id}`)
       
      },
      {
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
      {
       path:"/newProduct",
       element:<NewProduct></NewProduct>,
-      loader:()=>fetch('http://localhost:5000/food')
+      loader:()=>fetch('https://delishop-rho.vercel.app/food')
      }
     ]
   },

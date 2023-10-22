@@ -24,7 +24,7 @@ const AddProduct = () => {
         console.log(newFood)
 
 
-        fetch("http://localhost:5000/food", {
+        fetch("https://delishop-rho.vercel.app/food", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

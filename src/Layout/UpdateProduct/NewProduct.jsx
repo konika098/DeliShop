@@ -7,7 +7,7 @@ const NewProduct = () => {
     // const [newProduct,setNewProduct] =useState([])
 
     // const fetchNewProduct = () => {
-    //     fetch("http://localhost:5000/food")
+    //     fetch("https://delishop-rho.vercel.app/food")
     //       .then(response => {
     //         return response.json()
     //       })
@@ -22,7 +22,7 @@ const NewProduct = () => {
      <>
 
      {
-       food.map(newData =><AllNewProduct key={newData._id} newDatas={newData}></AllNewProduct>)
+       food?.map(newData =><AllNewProduct key={newData._id} newDatas={newData}></AllNewProduct>)
      }
      </>
     );
